@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Surprise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+</head>
+<body>
+
+    <div id="page1">
+        <h1>Click to receive your Valentine's Day gift!</h1>
+        <button id="startButton" class="button-82-pushable">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text">Press me UwU</span>
+        </button>
+    </div>
+
+    <div id="page2" class="hidden">
+        <div class="container">
+            <h2 id="guessText" class="fade-in hidden bordered-text">Guess who has no date tomorrow?</h2>
+            <img id="mirror" src="mirror.png" class="hidden">
+            <img id="laughcat1" src="laughcat1.png" class="hidden">
+            <h2 id="youText" class="hidden bordered-text">YOU</h2>
+            <h2 id="counterText" class="hidden bordered-text"></h2>
+            <button id="nextButton" class="button-82-pushable hidden">
+                <span class="button-82-shadow"></span>
+                <span class="button-82-edge"></span>
+                <span class="button-82-front text">Continue</span>
+            </button>
+        </div>
+        <audio id="laughSound" src="laughcat.mp3"></audio>
+    </div>
+
+    <div id="page3" class="hidden">
+        <img src="cheems.png" alt="Cheems" class="fade-in">
+        <h2 class="fade-in bordered-text">If love is so easy to find, what's beautiful about it?</h2>
+        <button id="finalButton" class="button-82-pushable fade-in">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text">Happy Valentine's Day!</span>
+        </button>
+        <audio id="relieveSound" src="relieve.mp3" autoplay></audio>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+body {
+  background: url('vday background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, visibility 0s linear 1s;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Fix spacing and alignment */
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Border for text like the reference image */
+.bordered-text {
+  font-size: 50px;
+  font-weight: bold;
+  color: yellow;
+  text-shadow: -2px -2px 0 blue, 2px -2px 0 blue, -2px 2px 0 blue, 2px 2px 0 blue;
+}
+
+/* Adjust mirror and cat positioning */
+#mirror {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+#laughcat1 {
+  width: 150px;
+  transform: rotate(45deg);
+  transition: opacity 1s ease-in-out;
+}
+
+/* Button 82 Styling */
+.button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+}
+
+.button-82-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: hsl(345deg 100% 47%);
+}
