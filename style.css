@@ -1,12 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Favorite+Notebook&display=swap');
+
 body {
   background: url('vday background.jpg') no-repeat center center fixed;
   background-size: cover;
   color: white;
   text-align: center;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Favorite Notebook', cursive;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
 .hidden {
   visibility: hidden;
@@ -50,34 +50,4 @@ h1, h2 {
   width: 180px; /* 20% increase */
   transform: rotate(45deg);
   transition: opacity 1s ease-in-out;
-}
-
-/* Adjust mirror positioning */
-#mirror {
-  width: 300px;
-  margin-bottom: 20px;
-}
-
-/* Button 82 Styling */
-.button-82-pushable {
-  position: relative;
-  border: none;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-  outline-offset: 4px;
-  transition: filter 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-82-front {
-  display: block;
-  position: relative;
-  padding: 12px 27px;
-  border-radius: 12px;
-  font-size: 1.1rem;
-  color: white;
-  background: hsl(345deg 100% 47%);
 }
