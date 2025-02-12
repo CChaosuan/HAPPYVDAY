@@ -13,25 +13,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     startButton?.addEventListener("click", () => {
         console.log("Start button clicked");
-        relieveMusic.pause(); // Stop relieve.mp3
+        relieveMusic.pause();
         relieveMusic.currentTime = 0;
 
         document.getElementById("page1").classList.add("hidden");
         document.getElementById("page2").classList.remove("hidden");
 
-        // Play harp.mp3 first
         harpMusic.play();
         console.log("Playing harp.mp3");
 
         setTimeout(() => {
             console.log("Playing laughcat.mp3");
             laughMusic.play();
-        }, 3000); // Wait 3 seconds before playing laughcat.mp3
+        }, 3000);
 
         setTimeout(() => {
             console.log("Playing joker.mp3");
             jokerMusic.play();
-        }, 5000); // Wait 5 seconds before playing joker.mp3
+        }, 5000);
 
         setTimeout(() => {
             console.log("Showing guess text");
@@ -54,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.log("Replacing YOU text with visitor count");
                 let count = await updateVisitorCount();
                 youText.innerText = `and ${count} other poor single souls like YOU (and Zhuoxuan)`;
-            }, 1000); // Replace after 1 second
+            }, 1000);
         }, 3500);
 
         setTimeout(() => {
@@ -65,16 +64,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     nextButton?.addEventListener("click", () => {
         console.log("Transitioning to Page 3");
-        jokerMusic.pause(); // Stop joker.mp3
+        jokerMusic.pause();
         jokerMusic.currentTime = 0;
 
         document.getElementById("page2").classList.add("hidden");
         document.getElementById("page3").classList.remove("hidden");
         relieveMusic.play();
-    });
-
-    finalButton?.addEventListener("click", () => {
-        console.log("Redirecting to Miro board");
-        window.location.href = "https://miro.com/app/board/uXjVLgWozEo=/";
     });
 });
