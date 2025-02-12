@@ -33,26 +33,29 @@ body {
 h1, h2 {
   margin-bottom: 20px;
   transition: opacity 1s ease-in-out;
+  color: white;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
 }
 
-/* Border for text like the reference image */
+/* Adjust text styling */
 .bordered-text {
   font-size: 50px;
   font-weight: bold;
-  color: yellow;
-  text-shadow: -2px -2px 0 blue, 2px -2px 0 blue, -2px 2px 0 blue, 2px 2px 0 blue;
+  color: white;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
 }
 
-/* Adjust mirror and cat positioning */
+/* Make laughing cat bigger */
+#laughcat1 {
+  width: 180px; /* 20% increase */
+  transform: rotate(45deg);
+  transition: opacity 1s ease-in-out;
+}
+
+/* Adjust mirror positioning */
 #mirror {
   width: 300px;
   margin-bottom: 20px;
-}
-
-#laughcat1 {
-  width: 150px;
-  transform: rotate(45deg);
-  transition: opacity 1s ease-in-out;
 }
 
 /* Button 82 Styling */
@@ -67,18 +70,6 @@ h1, h2 {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-}
-
-.button-82-shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  background: hsl(0deg 0% 0% / 0.25);
-  will-change: transform;
-  transform: translateY(2px);
 }
 
 .button-82-front {
