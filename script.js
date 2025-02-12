@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     startButton?.addEventListener("click", () => {
         console.log("Start button clicked");
+        relieveMusic.pause(); // Stop relieve.mp3
+        relieveMusic.currentTime = 0;
+
         document.getElementById("page1").classList.add("hidden");
         document.getElementById("page2").classList.remove("hidden");
 
@@ -43,16 +46,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
         setTimeout(() => {
             console.log("Updating YOU text");
-            document.getElementById("youText").classList.add("show");
-            document.getElementById("youText").innerText = "YOU";
-        }, 3500);
+            let youText = document.getElementById("youText");
+            youText.classList.add("show");
+            youText.innerText = "YOU";
 
-        setTimeout(async () => {
-            console.log("Updating visitor count");
-            let count = await updateVisitorCount();
-            document.getElementById("counterText").classList.add("show");
-            document.getElementById("counterText").innerText = `and ${count} other poor single souls like YOU (and Zhuoxuan)`;
-        }, 4000);
+            setTimeout(async () => {
+                console.log("Replacing YOU text with visitor count");
+                let count = await updateVisitorCount();
+                youText.innerText = `and ${count} other poor single souls like YOU (and Zhuoxuan)`;
+            }, 1000); // Replace after 1 second
+        }, 3500);
 
         setTimeout(() => {
             console.log("Showing next button");
@@ -62,6 +65,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     nextButton?.addEventListener("click", () => {
         console.log("Transitioning to Page 3");
+        jokerMusic.pause(); // Stop joker.mp3
+        jokerMusic.currentTime = 0;
+
         document.getElementById("page2").classList.add("hidden");
         document.getElementById("page3").classList.remove("hidden");
         relieveMusic.play();
