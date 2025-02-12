@@ -27,10 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
             laughMusic.play();
         }, 3000);
 
-        setTimeout(() => {
-            console.log("Playing joker.mp3");
-            jokerMusic.play();
-        }, 5000);
+        console.log("Playing joker.mp3 immediately");
+        jokerMusic.play();
 
         setTimeout(() => {
             console.log("Showing guess text");
@@ -44,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 2500);
 
         setTimeout(() => {
-            console.log("Updating YOU text");
+            console.log("Showing YOU text");
             let youText = document.getElementById("youText");
             youText.classList.add("show");
             youText.innerText = "YOU";
@@ -70,5 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("page2").classList.add("hidden");
         document.getElementById("page3").classList.remove("hidden");
         relieveMusic.play();
+    });
+
+    finalButton?.addEventListener("click", () => {
+        console.log("Redirecting to Miro board");
+        window.location.href = "https://miro.com/app/board/uXjVLgWozEo=/";
     });
 });
