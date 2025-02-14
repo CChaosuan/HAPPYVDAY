@@ -21,7 +21,7 @@
 
     <div id="page2" class="hidden">
         <div class="container">
-            <h2 id="guessText" class="fade-in hidden bordered-text">Guess who has no date tomorrow?</h2>
+            <h2 id="guessText" class="fade-in hidden bordered-text">Guess who has no date on Valentine's Day?</h2>
             <img id="mirror" src="mirror.png" class="hidden">
             <img id="laughcat1" src="laughcat1.png" class="hidden">
             <h2 id="youText" class="hidden bordered-text">YOU</h2>
@@ -39,14 +39,31 @@
 
     <div id="page3" class="hidden">
         <img src="cheems.png" alt="Cheems" class="fade-in">
+        <h2 class="fade-in bordered-text">On the other hand...</h2>
         <h2 class="fade-in bordered-text">If love is so easy to find, what's beautiful about it?</h2>
         <h3 class="fade-in subtext">(Besides I (Zhuoxuan) also has no date 🤡)</h3>
+
+        <img src="chocolate.png" alt="Chocolate" class="fade-in chocolate-img">
+        <h3 class="fade-in note-text">Have a chocolate and leave some words of wishes/encouragement</h3>
+
+        <!-- NEW: User Message Input -->
+        <textarea id="messageInput" class="message-input" placeholder="Say something..."></textarea>
+        <button id="submitMessage" class="button-82-pushable">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text">Send</span>
+        </button>
+
+        <!-- Display Submitted Messages -->
+        <div id="messageBoard" class="message-board"></div>
+
         <button id="finalButton" class="button-82-pushable fade-in">
             <span class="button-82-shadow"></span>
             <span class="button-82-edge"></span>
             <span class="button-82-front text">Happy Valentine's Day!</span>
         </button>
-        <audio id="relieveSound" src="relieve.mp3" autoplay></audio>
+        
+        
     </div>
 
     <script src="script.js"></script>
