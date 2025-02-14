@@ -144,7 +144,7 @@ window.onload = function () {
     if (finalButton) {
         finalButton.addEventListener("click", () => {
             console.log("Redirecting to Miro board");
-            window.location.href = "https://www.youtube.com/watch?v=qJYSskaBuIQ";
+            window.location.href = "https://miro.com/app/board/uXjVLgWozEo=/";
         });
     } else {
         console.log("finalButton not found!");
