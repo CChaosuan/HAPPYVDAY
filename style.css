@@ -5,7 +5,8 @@ body {
   background-size: cover;
   color: white;
   text-align: center;
-  font-family: 'Favorite Notebook', cursive;
+  font-family: 'Poppins', sans-serif;
+  
 }
 
 /* Visibility Control */
@@ -78,8 +79,8 @@ h1, h2 {
 
 /* Chocolate Image */
 .chocolate-img {
-  width: 15%;
-  height: 15%;
+  width: 25%;
+  height: 25%;
   margin-top: 15px;
 }
 
