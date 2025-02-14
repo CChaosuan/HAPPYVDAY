@@ -8,6 +8,7 @@ body {
   font-family: 'Favorite Notebook', cursive;
 }
 
+/* Visibility Control */
 .hidden {
   visibility: hidden;
   opacity: 0;
@@ -20,7 +21,7 @@ body {
   transition: opacity 1s ease-in-out;
 }
 
-/* Fix spacing and alignment */
+/* Fix Spacing and Layout */
 .container {
   position: relative;
   display: flex;
@@ -30,30 +31,115 @@ body {
   margin-top: 40px;
 }
 
+/* Adjust Font Styles */
 h1, h2 {
   margin-bottom: 20px;
-  transition: opacity 1s ease-in-out;
   color: white;
-  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+  text-shadow: -3px -3px 0 black, 3px -3px 0 black, -3px 3px 0 black, 3px 3px 0 black;
+  font-size: 2rem;
 }
 
-/* Adjust text styling */
 .bordered-text {
   font-size: 50px;
   font-weight: bold;
   color: white;
-  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+  text-shadow: -3px -3px 0 black, 3px -3px 0 black, -3px 3px 0 black, 3px 3px 0 black;
 }
 
 /* Smaller text for Zhuoxuan's message */
 .subtext {
-  font-size: 25px;
-  opacity: 0.7;
+  font-size: 22px;
+  opacity: 0.8;
+  font-style: italic;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
 }
 
-/* Make laughing cat bigger */
+/* Resize Mirror */
+#mirror {
+  width: 180px;
+  height: auto;
+}
+
+/* Make Laughing Cat Bigger */
 #laughcat1 {
   width: 180px; /* 20% increase */
   transform: rotate(45deg);
   transition: opacity 1s ease-in-out;
+}
+
+/* Fix Image Scaling */
+#cheems {
+  width: 60%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+/* Chocolate Image */
+.chocolate-img {
+  width: 15%;
+  height: 15%;
+  margin-top: 15px;
+}
+
+/* Ensure Input Box is Not Too Wide */
+.message-input {
+  width: 60%;
+  max-width: 500px;
+  height: 50px;
+  margin-top: 15px;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 18px;
+  background: white;
+  color: black;
+  border: 2px solid #ff66b2;
+  text-align: center;
+  font-family: 'Favorite Notebook', cursive;
+}
+
+/* Ensure Message Board is Not Stretched */
+.message-board {
+  width: 60%;
+  max-width: 500px;
+  max-height: 250px;
+  overflow-y: auto;
+  background: white;
+  color: black;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Favorite Notebook', cursive;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Improve Text Readability */
+.note-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff5f5;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+  margin-bottom: 15px;
+}
+
+/* Fix Button Styling */
+.button-82-pushable {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-82-pushable:hover {
+  background: #d83a58;
 }
